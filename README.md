@@ -2,7 +2,7 @@
 
 
 ### Introduction
-Joi validation wrapper middleware for validating express request headers and body.
+This is a Joi validation wrapper middleware for validating express request headers and body. All data validated by express-joi-validators is passed to a context object 'ctx' which is set on the request object of express.
 
 ####  Getting Started
 Here we will show you how to get started with express-joi-validators, through an example. Please follow the steps below to guide you through the process:
@@ -15,6 +15,8 @@ Here we will show you how to get started with express-joi-validators, through an
 - run node <code>index.js</code>
 - open <code>http://localhost:5000</code> in your browser
 - you should now get a response similar to the one given in the example below. 
+
+**Note:** If your version of express lower than 4.16.0 you will have to install the body-parser package and modify part 3 of the example accordingly.
 
 ```js 
 // PART 1: Setting up express
@@ -82,3 +84,5 @@ The code above would yield the response below:
     ]
 }
 ```
+
+####  Getting the Response Body
