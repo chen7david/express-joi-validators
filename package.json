@@ -1,0 +1,29 @@
+{
+  "name": "express-joi-validators",
+  "version": "0.9.9",
+  "description": "Joi validation wrapper middleware for validating express request headers and body.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chen7david/express-joi-validators.git"
+  },
+  "keywords": [
+    "validation",
+    "@hapi/joi",
+    "joi",
+    "validator",
+    "express-validation",
+    "express",
+    "header",
+    "body"
+  ],
+  "author": "David M.Chen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chen7david/express-joi-validators/issues"
+  },
+  "homepage": "https://github.com/chen7david/express-joi-validators#readme"
+}
