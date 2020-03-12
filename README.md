@@ -4,7 +4,7 @@
 ### Introduction
 This is a Joi validation wrapper middleware for validating express request headers and body. All data validated by express-joi-validators is passed to a context object 'ctx' which is set on the request object of express.
 
-####  Getting Started
+####  1. Getting Started
 Here we will show you how to get started with express-joi-validators, through an example. Please follow the steps below to guide you through the process:
 - create a new folder on your desktop
 - navigate into the folder with your CLI. <code>$ cd your_directory_path</code>
@@ -16,7 +16,7 @@ Here we will show you how to get started with express-joi-validators, through an
 - open <code>http://localhost:5000</code> in your browser
 - you should now get a response similar to the one given in the example below. 
 
-**Note:** If your version of express lower than 4.16.0 you will have to install the body-parser package and modify part 3 of the example accordingly.
+**Note:** If your version of express is lower than 4.16.0 you will have to install the body-parser package and modify part 3 of the example accordingly.
 
 ```js 
 // PART 1: Setting up express
@@ -85,4 +85,24 @@ The code above would yield the response below:
 }
 ```
 
-####  Getting the Response Body
+####  2. Getting the Response Body 
+If the request passes all validation rules, you access the validated body in your route through <code>req.ctx.body</code>. 
+
+example: 
+```js
+app.use('/login', validateBody(loginShema), (req, res) => {
+    const { body } = req.ctx
+    // your code ...
+})
+```
+
+####  2. Getting the Response Header 
+If the request passes all validation rules, you access the validated header in your route through <code>req.ctx.header</code>. 
+
+example: 
+```js
+app.use('/login', validateBody(loginShema), (req, res) => {
+    const { header } = req.ctx
+    // your code ...
+})
+```
