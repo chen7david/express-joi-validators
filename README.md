@@ -1,11 +1,13 @@
 # Express Joi Validators (EJV)
-Joi validation wrapper middleware for validating express request headers and body.
+
 
 ### Introduction
+Joi validation wrapper middleware for validating express request headers and body.
+
 ####  Getting Started
 Here we will show you how to get started with express-joi-validators, through an example. Please follow the steps below to guide you through the process:
 - create a new folder on your desktop
-- navigate into the folder with your CLI. (<code>$ cd directory_path</code>)
+- navigate into the folder with your CLI. <code>$ cd your_directory_path</code>
 - create a file called <code>index.js</code>
 - copy and paste the example code into your <code>index.js</code> file
 - run <code>npm init -y</code>
