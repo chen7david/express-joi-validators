@@ -85,7 +85,7 @@ The code above would yield the response below:
 }
 ```
 
-####  2. Getting the Response Body 
+####  2. Getting the Validated Response Body 
 If the request passes all validation rules, you access the validated body in your route through <code>req.ctx.body</code>. 
 
 example: 
@@ -96,7 +96,7 @@ app.use('/login', validateBody(loginShema), (req, res) => {
 })
 ```
 
-####  2. Getting the Response Header 
+####  3. Getting the Validated Response Header 
 If the request passes all validation rules, you access the validated header in your route through <code>req.ctx.header</code>. 
 
 example: 
