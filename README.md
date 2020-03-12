@@ -53,7 +53,7 @@ server.listen(port, () => {
 ```
 The code above would yield the response below: 
 
-'''js
+```js 
 {
     "_original": {},
     "details": [
