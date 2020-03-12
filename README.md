@@ -51,3 +51,34 @@ server.listen(port, () => {
     console.log(`server running at http://localhost:${port}`)
 })
 ```
+The code above would yield the response below: 
+
+'''js
+{
+    "_original": {},
+    "details": [
+        {
+            "message": "\"username\" is required",
+            "path": [
+                "username"
+            ],
+            "type": "any.required",
+            "context": {
+                "label": "username",
+                "key": "username"
+            }
+        },
+        {
+            "message": "\"password\" is required",
+            "path": [
+                "password"
+            ],
+            "type": "any.required",
+            "context": {
+                "label": "password",
+                "key": "password"
+            }
+        }
+    ]
+}
+```
