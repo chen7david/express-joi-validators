@@ -1,11 +1,8 @@
 {
   "name": "express-joi-validators",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Joi validation wrapper middleware for validating express request headers and body.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chen7david/express-joi-validators.git"
