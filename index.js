@@ -1,4 +1,4 @@
-const validateHeader = (schema) => {
+const validateBody = (schema) => {
     return (req, res, next) => {
         const body = req.body
         const { error, value } = schema.validate(body)
@@ -9,7 +9,7 @@ const validateHeader = (schema) => {
     }
 }
 
-const validateBody = (schema) => {
+const validateHeader = (schema) => {
     return (req, res, next) => {
         const headers = req.headers
         const { error, value } = schema.validate(headers)
