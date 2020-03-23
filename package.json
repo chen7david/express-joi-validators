@@ -1,6 +1,6 @@
 {
   "name": "express-joi-validators",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Joi validation wrapper middleware for validating express request headers and body.",
   "main": "index.js",
   "repository": {
